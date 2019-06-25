@@ -16,6 +16,12 @@ function pFileReader(file){
     });
 }
 
+/**
+ * ImageData to array, format:
+ *   data[y][x][color(r - 0, g - 1, b - 2, a - 3)]
+ * 
+ * @param {Array<number>} arr 
+ */
 function convertImageArray(arr){
     let width = arr.width;
     let height = arr.height;
